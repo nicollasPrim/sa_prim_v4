@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-prog.css">
+    <link rel="shortcut icon" href="home.svg" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Página Inicial</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="cab-especial">
+            <img class="logo" src="home.svg" alt="logo_site">
+        </a>
+        <nav>
+            <a class="cab" href="index.html">Home</a>
+            <a class="cab" href="cont.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Programação</h1> <hr>
+        <section id="questProva1" class="programacao">
+            <h2>Ordenação com Bubble Sort</h2>
+            <hr class="hr-especial">
+            <p>Implemente um programa que ordene uma lista de 20 números aleatórios usando o algoritmo Bubble Sort e mostre o array ordenado e o número total de divisões realizadas.</p>
+            <hr class="hr-especial">
+            <div class="buttons">
+                <button onclick="bubbleSortEx()">Calcular</button>
+                <button onclick="mostra('preQuestProva1')">Mostrar Código</button>
+            </div>
+            <code id="preQuestProva1" class="quest">
+                <pre>
+function mergeSortEx() {
+    let array = []
+    for (let i = 0; i < 20; i++) {
+        array.push(setValueRandom(100, 1))  // Gerando 20 números aleatórios
+    }
+
+    console.log("Array inicial: ", array)
+
+    let count = 0
+    function mergeSort(array) {
+        if (array.length < 2) return array;
+        let mid = Math.floor(array.length / 2);
+        let left = mergeSort(array.slice(0, mid));
+        let right = mergeSort(array.slice(mid));
+        return merge(left, right);
+    }
+
+    function merge(left, right) {
+        count++;
+        let sorted = [];
+        while (left.length && right.length) {
+            if (left[0] < right[0]) sorted.push(left.shift());
+            else sorted.push(right.shift());
+        }
+        return [...sorted, ...left, ...right];
+    }
+
+    let sortedArray = mergeSort(array)
+    console.log("Array ordenado: ", sortedArray)
+    console.log("Divisões realizadas: ", count)
+}
+                </pre>
+            </code>
+        </section>
+        <hr>
+        <section id="questProva2" class="programacao">
+            <h2>Ordenação com Selection Sort</h2>
+            <hr class="hr-especial">
+            <p>Crie um programa que use o algoritmo Selection Sort para ordenar uma lista de 15 números aleatórios. Exiba a lista ordenada e o número de trocas realizadas.</p>
+            <hr class="hr-especial">
+            <div class="buttons">
+                <button onclick="selectionSortEx()">Calcular</button>
+                <button onclick="mostra('preQuestProva2')">Mostrar Código</button>
+            </div>
+            <code id="preQuestProva2" class="quest">
+                <pre>
+function quickSortEx() {
+    let array = []
+    for (let i = 0; i < 15; i++) {
+        array.push(setValueRandom(100, 1))  // Gerando 15 números aleatórios
+    }
+
+    console.log("Array inicial: ", array)
+
+    let count = 0
+    function quickSort(array) {
+        if (array.length < 2) return array;
+        let pivot = array[0];
+        let left = [], right = [];
+        for (let i = 1; i < array.length; i++) {
+            count++;
+            array[i] < pivot ? left.push(array[i]) : right.push(array[i]);
+        }
+        return [...quickSort(left), pivot, ...quickSort(right)];
+    }
+
+    let sortedArray = quickSort(array);
+    console.log("Array ordenado: ", sortedArray)
+    console.log("Trocas realizadas: ", count)
+}
+                </pre>
+            </code>
+        </section>
+        <hr>
+        <section id="questProva3" class="programacao">
+            <h2>Ordenação com Inserction Sort</h2>
+            <hr class="hr-especial">
+            <p>Escreva um programa que utilize o algoritmo Inserction Sort para ordenar uma lista de 10 números aleatórios. Exiba a lista ordenada e o número de operações de troca realizadas.</p>
+            <hr class="hr-especial">
+            <div class="buttons">
+                <button onclick="insertionSortEx()">Calcular</button>
+                <button onclick="mostra('preQuestProva3')">Mostrar Código</button>
+            </div>
+            <code id="preQuestProva3" class="quest">
+                <pre>
+function heapSortEx() {
+    let array = []
+    for (let i = 0; i < 10; i++) {
+        array.push(setValueRandom(100, 1))  // Gerando 10 números aleatórios
+    }
+
+    console.log("Array inicial: ", array)
+
+    let count = 0
+    function heapify(array, length, i) {
+        let largest = i;
+        let left = 2 * i + 1;
+        let right = 2 * i + 2;
+        if (left < length && array[left] > array[largest]) largest = left;
+        if (right < length && array[right] > array[largest]) largest = right;
+        if (largest != i) {
+            [array[i], array[largest]] = [array[largest], array[i]];
+            count++;
+            heapify(array, length, largest);
+        }
+    }
+
+    function heapSort(array) {
+        let length = array.length;
+        for (let i = Math.floor(length / 2 - 1); i >= 0; i--) heapify(array, length, i);
+        for (let i = length - 1; i > 0; i--) {
+            [array[0], array[i]] = [array[i], array[0]];
+            count++;
+            heapify(array, i, 0);
+        }
+    }
+
+    heapSort(array);
+    console.log("Array ordenado: ", array);
+    console.log("Trocas realizadas: ", count);
+}
+                </pre>
+            </code>
+        </section>
+        <hr>
+        <section id="ordenacao" class="programacao">
+            <h2>Comparação de Algoritmos de Ordenação</h2>
+            <hr class="hr-especial">
+            <p>Implemente os três algoritmos (Bubble Sort, Selection Sort, e Inserction Sort) em um único programa e compare o desempenho de cada um para ordenar uma lista de 1000 números aleatórios.</p>
+            <hr class="hr-especial">
+            <div class="buttons">
+                <button onclick="compararOrdenacoes()">Calcular</button>
+                <button onclick="mostra('preOrdenacao')">Mostrar Código</button>
+            </div>
+            <code id="preOrdenacao" class="quest">
+                <pre>
+function compararOrdenacoes() {
+    let array = []
+    for (let i = 0; i < 1000; i++) {
+        array.push(setValueRandom(1000, 1))  // Gerando 1000 números aleatórios
+    }
+
+    console.log("Array inicial: ", array)
+
+    let startTime = performance.now()
+    mergeSort([...array])
+    let endTime = performance.now()
+    console.log("Merge Sort levou: ", (endTime - startTime) + "ms")
+
+    startTime = performance.now()
+    quickSort([...array])
+    endTime = performance.now()
+    console.log("Quick Sort levou: ", (endTime - startTime) + "ms")
+
+    startTime = performance.now()
+    heapSort([...array])
+    endTime = performance.now()
+    console.log("Heap Sort levou: ", (endTime - startTime) + "ms")
+}
+                </pre>
+            </code>
+        </section>
+        <hr>
+        <footer class="rp">
+            <p class="texrp">© 2024 Prim Dev. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>

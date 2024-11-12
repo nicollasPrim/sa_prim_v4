@@ -1,0 +1,83 @@
+Elementos Gerais:
+[ ] I. Implementação do site/página web em ambiente de desenvolvimento (antes da publicação).
+[ ] II. Publicação do Site na web. 
+
+Detalhamento das estrutura e aspecto visual do site/página web a ser implementado deve conter:
+[x] 1. Barra de navegação, com links de serviços, além do link da página home e de contato;
+[ ] 2. Página de Serviços de programação e tipos de Banco de Dados empregados nos serviços;
+[ ] 3. Página de Algoritmos e Lógica Computacional que a empresa é capaz de implementar;
+[ ] 4. Página de componentes eletrônicos, componentes de rede, servidores e dispositivos.
+[x] 5. Rodapé com nome e da marca registrada da empresa.
+
+RESULTADOS ESPERADOS: Implementação e publicação do site/página que contenham os elementos gerais e estrutura do site, descrevendo os serviços relacionados aos serviços que envolvem elementos de rede e eletroeletrônica, modelagem e tipos de banco de dados, técnicas de programação e lógica computacional com os respectivos algoritmos, infraestrutura de redes e servidores, aplicação de scripts em sistemas operacionais e ferramentas de escritório utilizadas para a prestação de serviços. Conteúdo esperado no site/página
+[ ] 1. Elementos, componentes e configuração de rede interna na qual servidor web está inserido;
+[ ] 2. Configuração do servidores: de Domínio (DNS) e de comunicação web (Servidor HTTP);
+[ ] 3. Descrição dos equipamentos aplicados em redes com sua respectiva função e configuração;
+[ ] 4. Descrição via fluxograma dos algoritmos que a empresa implementa (3 exemplos);
+[ ] 5. Tecnologias banco de dados relacionais utilizadas na empresa - SQL (3 exemplos);
+[ ] 6. Diagramas DER e MER de banco de dados relacionais (3 exemplos);
+[ ] 7. Componentes Eletrônicos empregados em serviços (3 exemplos);
+[ ] 8. Fluxograma de algoritmos implementados (3 exemplos);
+[ ] 9. Programas implementados em Javascript (3 exemplos);
+[ ] 10. Programas de ordenação implementados em Javascript (3 exemplos);
+
+Pagina Principal:
+[x] 1. Informações sobre a empresa
+[x] 2. Descrição geral dos serviços
+[x] 3. localização (mapa)
+[ ] 4. vídeo dos principais serviços da empresa
+[ ] 5. redes sociais e contatos
+
+Eletrônica:
+[ ] 1. Resistores e código de cores
+[ ] 2. Diodo LED e display sete segmentos
+[ ] 3. tinkercad - projeto exemplo com print de tela
+[ ] 4. placa arduíno
+[ ] 5. programa no IDE arduíno
+[ ] 6. entrada analógica no arduíno
+[ ] 7. entrada digital no arduíno
+[ ] 8. saída analógica no arduíno (pwm)
+[ ] 9. saída digital no arduíno
+[ ] 10. multímetro  o que é e para que serve
+[ ] 11. unidades de medida no multímetro
+
+Redes:
+[ ] 1. Elementos, componentes e configuração de rede interna na qual servidor web está inserido (cisco packet tracer)
+[ ] 2. Configuração do servidores: de Domínio (DNS) e de comunicação web (Servidor HTTP) e DHCP
+[ ] 3. equipamentos aplicados em redes com sua respectiva função e configuração
+[ ] 4. Conceito de servidor
+[ ] 5. DNS - o que é
+[ ] 6. HTTP o que é
+[ ] 7. DHCP o que é
+[ ] 8. foto da crimpagem
+[ ] 9. cabo de rede - pinagem
+[ ] 10. condeito do modelo OSI
+[ ] 11. conceito do TCP/IP
+
+Banco de Dados:
+[ ] 1. O que é um banco de dados
+[ ] 2. banco de dados relacional
+[ ] 3. banco de dados não relacional
+[ ] 4. o que é um diagrama conceitual DER
+[ ] 5. o que é um diagrama lógico MER
+[ ] 6. apresentar o diagrama DER do exercício
+[ ] 7. apresentar o diagrama MER do exercício
+[ ] 8. quais os banco de dados que a empresa trabalha?
+[ ] 9. O que é dicionário de dados
+
+Algoritmos e Fluxograma:
+[ ] 1. Descrição via fluxograma dos algoritmos que a empresa implementa
+[ ] 2. simbologia de fluxograma
+[ ] 3. exemplo dos algoritmos bubble Sort, insertion Sort e selection Sort em fluxograma
+[ ] 4. Mostrar um fluxograma com array de números pares e ímpares
+[ ] 5. exemplo de software para fazer fluxograma - luccidChart
+
+Programação:
+[ ] 1. escolher 3 exercícios da prova de arrays e postar no site
+[ ] 2. programação dos métodos de busca e ordenação buble Sort, insertion sort e selection sort
+[ ] 3. Programação com criação de elementos dinâmicos (create.element e appendChild)
+[ ] 4. Exemplo de programa com o laço FOR
+[ ] 5. Exemplo de programa com o laço WHILE
+[ ] 6. Exemplo de programa com estrutura IF, ELSE e ELSE-IF
+[ ] 7. Filmagem da explicação dos métodos de ordenação
+[ ] 8. programas de ordem crescente e decrescente
